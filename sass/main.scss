@@ -1,0 +1,121 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin-top: 4em;
+}
+
+.logo {
+    a {
+        color: black;
+        font-size: 2.5em;
+        font-weight: 700;
+        border: 2px solid black;
+        padding: 7px 15px;
+        text-decoration: none;
+    }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.navbar-toggler {
+    background-color: black;
+    padding: 1.15rem 1.55rem;
+}
+
+.hamburger {
+    float: right;
+}
+
+.icon {
+    color: white;
+    font-size: 2.25rem;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+.background {
+    position: relative;
+    display: none;
+    width: auto;
+    height: 600px;
+    background-image: url("../images/slider-2.jpg");
+    background-size: 1144px 487px;
+    background-repeat: no-repeat;
+
+    .background-anim {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        animation-name: example;
+        animation-duration: 2s;
+    }
+}
+@keyframes example {
+    0% {
+        background-color: rgba(147, 142, 138, 0.75);
+    }
+
+    25% {
+        background-color: rgba(147, 142, 138, 0.55);
+    }
+
+    50% {
+        background-color: rgba(147, 142, 138, 0.25);
+    }
+
+    100% {
+        background-color: rgba(147, 142, 138, 0);
+    }
+}
+
+.background-info {
+    text-align: center;
+    padding-top: 160px;
+    color: white;
+
+    h1 {
+        font-weight: 700;
+        display: none;
+        line-height: 1.5;
+    }
+
+    h3 {
+        font-weight: 700;
+        line-height: 1.5;
+        display: none;
+        padding: 10px;
+    }
+
+    p {
+        display: none;
+    }
+}
+
+.info-box {
+    margin-top: 20px;
+    display: none;
+}
+
+.info-box-new {
+    display: block;
+    margin-top: 10px;
+}
